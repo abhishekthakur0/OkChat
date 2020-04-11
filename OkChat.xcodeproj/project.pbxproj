@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07CD409AEFD27F307412996C /* Pods_OkChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1925DBADB1B16CEC24ACB91E /* Pods_OkChat.framework */; };
+		D36A1E7F24422C32001B5B05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D36A1E7E24422C32001B5B05 /* GoogleService-Info.plist */; };
+		D36A1E8124423422001B5B05 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A1E8024423422001B5B05 /* Utilities.swift */; };
 		D3947121239991BA000DEC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947120239991BA000DEC8A /* AppDelegate.swift */; };
 		D3947123239991BA000DEC8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947122239991BA000DEC8A /* SceneDelegate.swift */; };
 		D3947125239991BA000DEC8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947124239991BA000DEC8A /* ViewController.swift */; };
 		D3947128239991BA000DEC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3947126239991BA000DEC8A /* Main.storyboard */; };
 		D394712A239991BC000DEC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3947129239991BC000DEC8A /* Assets.xcassets */; };
 		D394712D239991BC000DEC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D394712B239991BC000DEC8A /* LaunchScreen.storyboard */; };
+		D3947137239998BC000DEC8A /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947136239998BC000DEC8A /* LoginRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D34E33522EDE6F3121F11A /* Pods-OkChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkChat.release.xcconfig"; path = "Target Support Files/Pods-OkChat/Pods-OkChat.release.xcconfig"; sourceTree = "<group>"; };
+		1925DBADB1B16CEC24ACB91E /* Pods_OkChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OkChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7568A68173C3397044E1C62E /* Pods-OkChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkChat.debug.xcconfig"; path = "Target Support Files/Pods-OkChat/Pods-OkChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D36A1E7E24422C32001B5B05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D36A1E8024423422001B5B05 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D394711D239991BA000DEC8A /* OkChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3947120239991BA000DEC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3947122239991BA000DEC8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		D3947129239991BC000DEC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D394712C239991BC000DEC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D394712E239991BC000DEC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3947136239998BC000DEC8A /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CD409AEFD27F307412996C /* Pods_OkChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24D678018F7E64ACC41F3FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1925DBADB1B16CEC24ACB91E /* Pods_OkChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3947114239991B9000DEC8A = {
 			isa = PBXGroup;
 			children = (
 				D394711F239991BA000DEC8A /* OkChat */,
 				D394711E239991BA000DEC8A /* Products */,
+				DC3560682E22C58AE7783C89 /* Pods */,
+				24D678018F7E64ACC41F3FBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +78,26 @@
 			isa = PBXGroup;
 			children = (
 				D3947120239991BA000DEC8A /* AppDelegate.swift */,
+				D36A1E7E24422C32001B5B05 /* GoogleService-Info.plist */,
 				D3947122239991BA000DEC8A /* SceneDelegate.swift */,
 				D3947124239991BA000DEC8A /* ViewController.swift */,
 				D3947126239991BA000DEC8A /* Main.storyboard */,
 				D3947129239991BC000DEC8A /* Assets.xcassets */,
 				D394712B239991BC000DEC8A /* LaunchScreen.storyboard */,
 				D394712E239991BC000DEC8A /* Info.plist */,
+				D3947136239998BC000DEC8A /* LoginRegisterViewController.swift */,
+				D36A1E8024423422001B5B05 /* Utilities.swift */,
 			);
 			path = OkChat;
+			sourceTree = "<group>";
+		};
+		DC3560682E22C58AE7783C89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7568A68173C3397044E1C62E /* Pods-OkChat.debug.xcconfig */,
+				02D34E33522EDE6F3121F11A /* Pods-OkChat.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3947131239991BC000DEC8A /* Build configuration list for PBXNativeTarget "OkChat" */;
 			buildPhases = (
+				93D4D09EAC9F7D2CB946633F /* [CP] Check Pods Manifest.lock */,
 				D3947119239991BA000DEC8A /* Sources */,
 				D394711A239991BA000DEC8A /* Frameworks */,
 				D394711B239991BA000DEC8A /* Resources */,
+				3B62DCD0F5309FF4A42D3E00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +161,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D394712D239991BC000DEC8A /* LaunchScreen.storyboard in Resources */,
+				D36A1E7F24422C32001B5B05 /* GoogleService-Info.plist in Resources */,
 				D394712A239991BC000DEC8A /* Assets.xcassets in Resources */,
 				D3947128239991BA000DEC8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B62DCD0F5309FF4A42D3E00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkChat/Pods-OkChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OkChat/Pods-OkChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OkChat/Pods-OkChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D4D09EAC9F7D2CB946633F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OkChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3947119239991BA000DEC8A /* Sources */ = {
@@ -141,6 +219,8 @@
 				D3947125239991BA000DEC8A /* ViewController.swift in Sources */,
 				D3947121239991BA000DEC8A /* AppDelegate.swift in Sources */,
 				D3947123239991BA000DEC8A /* SceneDelegate.swift in Sources */,
+				D36A1E8124423422001B5B05 /* Utilities.swift in Sources */,
+				D3947137239998BC000DEC8A /* LoginRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		D3947132239991BC000DEC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7568A68173C3397044E1C62E /* Pods-OkChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		D3947133239991BC000DEC8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D34E33522EDE6F3121F11A /* Pods-OkChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
