@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07CD409AEFD27F307412996C /* Pods_OkChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1925DBADB1B16CEC24ACB91E /* Pods_OkChat.framework */; };
-		D36A1E7F24422C32001B5B05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D36A1E7E24422C32001B5B05 /* GoogleService-Info.plist */; };
 		D36A1E8124423422001B5B05 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A1E8024423422001B5B05 /* Utilities.swift */; };
 		D3947121239991BA000DEC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947120239991BA000DEC8A /* AppDelegate.swift */; };
 		D3947123239991BA000DEC8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947122239991BA000DEC8A /* SceneDelegate.swift */; };
@@ -17,13 +16,14 @@
 		D394712A239991BC000DEC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3947129239991BC000DEC8A /* Assets.xcassets */; };
 		D394712D239991BC000DEC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D394712B239991BC000DEC8A /* LaunchScreen.storyboard */; };
 		D3947137239998BC000DEC8A /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3947136239998BC000DEC8A /* LoginRegisterViewController.swift */; };
+		D39A73E124439CAE000A32FC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39A73E024439CAE000A32FC /* Constant.swift */; };
+		D39A73E32443AC9D000A32FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D39A73E22443AC9D000A32FC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02D34E33522EDE6F3121F11A /* Pods-OkChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkChat.release.xcconfig"; path = "Target Support Files/Pods-OkChat/Pods-OkChat.release.xcconfig"; sourceTree = "<group>"; };
 		1925DBADB1B16CEC24ACB91E /* Pods_OkChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OkChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7568A68173C3397044E1C62E /* Pods-OkChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkChat.debug.xcconfig"; path = "Target Support Files/Pods-OkChat/Pods-OkChat.debug.xcconfig"; sourceTree = "<group>"; };
-		D36A1E7E24422C32001B5B05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D36A1E8024423422001B5B05 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D394711D239991BA000DEC8A /* OkChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3947120239991BA000DEC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		D394712C239991BC000DEC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D394712E239991BC000DEC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3947136239998BC000DEC8A /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		D39A73E024439CAE000A32FC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D39A73E22443AC9D000A32FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,8 @@
 		D394711F239991BA000DEC8A /* OkChat */ = {
 			isa = PBXGroup;
 			children = (
+				D39A73E22443AC9D000A32FC /* GoogleService-Info.plist */,
 				D3947120239991BA000DEC8A /* AppDelegate.swift */,
-				D36A1E7E24422C32001B5B05 /* GoogleService-Info.plist */,
 				D3947122239991BA000DEC8A /* SceneDelegate.swift */,
 				D3947124239991BA000DEC8A /* ViewController.swift */,
 				D3947126239991BA000DEC8A /* Main.storyboard */,
@@ -87,6 +89,7 @@
 				D394712E239991BC000DEC8A /* Info.plist */,
 				D3947136239998BC000DEC8A /* LoginRegisterViewController.swift */,
 				D36A1E8024423422001B5B05 /* Utilities.swift */,
+				D39A73E024439CAE000A32FC /* Constant.swift */,
 			);
 			path = OkChat;
 			sourceTree = "<group>";
@@ -161,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D394712D239991BC000DEC8A /* LaunchScreen.storyboard in Resources */,
-				D36A1E7F24422C32001B5B05 /* GoogleService-Info.plist in Resources */,
+				D39A73E32443AC9D000A32FC /* GoogleService-Info.plist in Resources */,
 				D394712A239991BC000DEC8A /* Assets.xcassets in Resources */,
 				D3947128239991BA000DEC8A /* Main.storyboard in Resources */,
 			);
@@ -221,6 +224,7 @@
 				D3947123239991BA000DEC8A /* SceneDelegate.swift in Sources */,
 				D36A1E8124423422001B5B05 /* Utilities.swift in Sources */,
 				D3947137239998BC000DEC8A /* LoginRegisterViewController.swift in Sources */,
+				D39A73E124439CAE000A32FC /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
