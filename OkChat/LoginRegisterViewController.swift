@@ -108,35 +108,16 @@ class LoginRegisterViewController: UIViewController {
     }
     
     @IBAction func forgotClicked(_ sender: Any) {
-        if (emailTextField.text!.count < 5)
-        {
-            emailTextField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
-            return 
-        }
-        
-        let resEmail = emailTextField.text
-        Auth.auth().sendPasswordReset(withEmail: resEmail!) { error in
-            DispatchQueue.main.async {
-                if error != nil {
-                    // YOUR ERROR CODE
-                    Utilities().showAlert(title: "Error", message: "We Got Some Error Try Again Later", vc: self)
-                } else {
-                    //YOUR SUCCESS MESSAGE
-                    Utilities().showAlert(title: "Hurray", message: "A Reset Email has been sent...", vc: self)
+        if(!emailTextField.text!.isEmpty){
+            let email = self.emailTextField.text
+            
+            Auth.auth().sendPasswordReset(withEmail: email!) { (error) in
+                if let error = error {
+                    Utilities().showAlert(title: "Error", message: error.localizedDescription, vc: self)
+                    return
                 }
+                Utilities().showAlert(title: "Success", message: "Please Check Your Email", vc: self)
             }
-            
-            
         }
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
-        
     }
 }
